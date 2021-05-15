@@ -58,3 +58,18 @@
   margin-bottom: 0;
 }
 
+.article-list li {
+  /*text-decoration: underline;*/
+  list-style-type: none;
+  /*color: #aaa;*/
+}
+
+.article-list {
+  padding-left: 0px;
+}
+
+.article-list li:hover {
+  color: #666;
+  cursor: pointer;
+}
+

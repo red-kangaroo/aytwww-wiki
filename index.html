@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body onload="getArticles()">
+<body onload="initPage()">
     <div></div>
     <div>
         <div class="container">
@@ -35,36 +35,28 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col">
                 <h2>Popular Pages</h2>
-                <form class="date-select">
-                    <div class="form-group">
-                        <div class="input-group mb-4">
-                            <div class="input-group-prepend"><span class="input-group-text">Date</span></div><input class="form-control" type="text" id="datePicker"></div>
-                    </div>
-                    <div class="form-group mt-4"><button class="btn btn-primary btn-block" type="submit">Send</button></div>
-                </form>
-                <p>TODO: datepicker, language dropdown</p>
-                <ul id="wiki-articles">
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                    <li>Item 4</li>
+                <ul id="wiki-articles" class="article-list">
+                    <li>Cool article</li>
+                    <li>Interesting page</li>
+                    <li>Popular site</li>
+                    <li>NSFW</li>
                 </ul>
-            </div>
-            <div class="col-md-4">
+                <form class="date-select"><input class="form-control" id="datePicker" type="date"></form><button class="btn btn-primary btn-block" id="dateButton" onclick="getArticles()">Send</button></div>
+            <div class="col-lg-6">
                 <h2 id="select-heading">What does this do?</h2>
                 <div id="select-article" style="text-align: justify;">
-                    <p>To the left, you can select a date and a list of the most popular pages on Wikipedia for that day will be displayed. Clink on an article that would interest you and a short exceprt will be shown right here. No need to waste your time
+                    <p>To the left, you can select a date and a list of the most popular pages on Wikipedia for that day will be displayed. Clink on an article that would interest you and a short excerpt will be shown right here. No need to waste your time
                         reading the whole thing!</p>
                     <p>To the right, you can see the history of articles you tried out.</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col d-flex flex-column">
                 <h2>Your History</h2>
-                <ul id="favour-articles">
-                    <li>Your favourite articles!</li>
-                </ul><button class="btn btn-primary btn-block" onclick="resetFavourites()">Delete History</button></div>
+                <ul id="favour-articles" class="article-list">
+                    <li>Here you can find everything that you have checked out before.</li>
+                </ul><span class="flex-grow-1"></span><button class="btn btn-danger btn-block align-self-center" onclick="resetFavourites()" style="width: 50%;">Delete History</button></div>
         </div>
     </div>
     </div>
@@ -87,9 +79,6 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/smart-forms.min.js"></script>
-    <script src="assets/js/datepicker.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightpick@1.3.4/lightpick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets/js/wiki.js"></script>
 </body>
 
