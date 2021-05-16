@@ -1,10 +1,7 @@
-language dropdown?
-page numer limit selection
-hide delete history when no history
-
-harden against bad input etc.
-add link to the whole article
+allow selection of language, dropdown?
+popular pages / history limit selection
 better excerpt length
-show warning when bad date is selected
+show warning when request fails
 
-About, README
+Pop up with all articles shown, no matter the historyLimit?
+Add link to the whole article on Wikipedia?
