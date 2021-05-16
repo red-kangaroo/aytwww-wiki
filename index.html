@@ -36,27 +36,27 @@
         </div>
         <div class="row">
             <div class="col">
-                <h2>Popular Pages</h2>
+                <h2>Popular Articles</h2>
                 <ul id="wiki-articles" class="article-list">
                     <li>Cool article</li>
                     <li>Interesting page</li>
                     <li>Popular site</li>
                     <li>NSFW</li>
                 </ul>
-                <form class="date-select"><input class="form-control" id="datePicker" type="date"></form><button class="btn btn-primary btn-block" id="dateButton" onclick="getArticles()">Send</button></div>
+                <form class="date-select"><input class="form-control" id="datePicker" type="date"></form><button class="btn btn-primary btn-block" id="dateButton" onclick="getArticles()">Show Articles</button></div>
             <div class="col-lg-6">
                 <h2 id="select-heading">What does this do?</h2>
                 <div id="select-article" style="text-align: justify;">
-                    <p>To the left, you can select a date and a list of the most popular pages on Wikipedia for that day will be displayed. Clink on an article that would interest you and a short excerpt will be shown right here. No need to waste your time
-                        reading the whole thing!</p>
-                    <p>To the right, you can see the history of articles you tried out.</p>
+                    <p>To the left, you can select a date and a list of the most popular pages on Wikipedia for that day will be displayed. Click on an article that would interest you and a short excerpt will be shown right here. No need to waste your time
+                        reading the whole thing on Wikipedia and getting distracted by all the hyperlinks!</p>
+                    <p>To the right, you can see the history of articles you tried out. Click on them to read them again.</p>
                 </div>
             </div>
             <div class="col d-flex flex-column">
                 <h2>Your History</h2>
                 <ul id="favour-articles" class="article-list">
                     <li>Here you can find everything that you have checked out before.</li>
-                </ul><span class="flex-grow-1"></span><button class="btn btn-danger btn-block align-self-center" onclick="resetFavourites()" style="width: 50%;">Delete History</button></div>
+                </ul><span class="flex-grow-1"></span><button class="btn btn-danger btn-block align-self-center" id="deleteHistory" onclick="resetFavourites()" style="width: 50%;">Delete History</button></div>
         </div>
     </div>
     </div>
@@ -64,16 +64,20 @@
         <div class="container">
             <div class="intro">
                 <h2 class="text-center" id="about">About</h2>
-                <p class="text-center">This page was created for the AYWWW class in Bootstrap Studio 5.1.1</p>
+                <p class="text-center">The ideal tool for the lazy Wikipedia lover!</p>
+                <p class="text-center">Wikipedia Companion lets you keep tabs on what all the fuss is about on Wikipedia right now, without you needing to go on Wikipedia and risking getting sucked down the labyrinth of endless interesting&nbsp;<a href="https://xkcd.com/214/"
+                        target="_blank">hyperlinks</a>.</p>
+                <p class="text-center">Select a date and you will be presented with a list of the most popular pages for that day by the number of visitors. You can click on an interesting title to display an excerpt from that page. A history of your articles will also be saved,
+                    so that you can come back to them later.</p>
+                <p class="text-center">This page was created as a project for the AYTWWW class.</p>
             </div>
         </div>
     </div>
     <div></div>
     <div class="footer-basic">
         <footer>
-            <div class="social"><a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank"><i class="fab fa-wikipedia-w"></i></a><a href="#" target="_blank"><i class="icon ion-social-github"></i></a><a href="https://cz.linkedin.com/in/filip-findura" target="_blank"><i class="icon ion-social-linkedin"></i></a></div>
-            <p
-                class="copyright">Filip Findura © 2021</p>
+            <div class="social"><a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank"><i class="fab fa-wikipedia-w"></i></a><a href="https://github.com/red-kangaroo/aytwww-wiki" target="_blank"><i class="icon ion-social-github"></i></a></div>
+            <p class="copyright">Filip Findura © 2021</p>
         </footer>
     </div>
     <script src="assets/js/jquery.min.js"></script>
