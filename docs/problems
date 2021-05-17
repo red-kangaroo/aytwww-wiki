@@ -1,7 +1,0 @@
-Cross-Origin požadavek byl zablokován: Same Origin zásada nepovoluje načtení vzdáleného zdroje Důvod: chybí hlavička CORS 'Access-Control-Allow-Origin').
-origin=*
-
-
-one item local storage // arrays in localStorage
-
-datepicker
